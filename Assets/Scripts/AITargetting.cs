@@ -27,7 +27,7 @@ public class AITargetting : MonoBehaviour
     {
         //nav.SetDestination(target.transform.position);
 
-        if (GetComponent<CharacterController>().death == false)
+        if (GetComponent<MyCharacterController>().death == false)
         {
 
             Vector3 _direction = (target.transform.position - transform.position).normalized;
@@ -47,13 +47,13 @@ public class AITargetting : MonoBehaviour
 
         if(Vector3.Distance(transform.position,target.transform.position) <= 1.5f)
         {
-            if (GetComponent<CharacterController>().death == false)
+            if (GetComponent<MyCharacterController>().death == false)
             {
-                if (target.GetComponent<CharacterController>().death == false)
+                if (target.GetComponent<MyCharacterController>().death == false)
                 {
-                    if (!GetComponent<CharacterController>().ani.GetCurrentAnimatorStateInfo(0).IsName("Punch"))
+                    if (!GetComponent<MyCharacterController>().ani.GetCurrentAnimatorStateInfo(0).IsName("Punch"))
                     {
-                        GetComponent<CharacterController>().ani.SetTrigger("Punch");
+                        GetComponent<MyCharacterController>().ani.SetTrigger("Punch");
 
                     }
                 }

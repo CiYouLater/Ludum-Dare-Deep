@@ -25,7 +25,7 @@ public class HeartRotate : MonoBehaviour
         {
             if (!hasHealed)
             {
-                other.GetComponent<CharacterController>().Heal();
+                other.GetComponent<MyCharacterController>().Heal();
                 hasHealed = true;
                 Destroy(gameObject);
             }

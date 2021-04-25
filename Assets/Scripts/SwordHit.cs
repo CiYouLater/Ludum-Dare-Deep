@@ -20,11 +20,11 @@ public class SwordHit : MonoBehaviour
         if (other.gameObject.tag.Equals("Enemy"))
         {
           
-            if(other.gameObject.GetComponent<CharacterController>().death == false)
+            if(other.gameObject.GetComponent<MyCharacterController>().death == false)
             {
                 //Debug.Log("hit");
                 other.gameObject.GetComponent<Animator>().SetTrigger("Hit");
-                other.gameObject.GetComponent<CharacterController>().HitHP(30);
+                other.gameObject.GetComponent<MyCharacterController>().HitHP(40);
             }
             
         }

@@ -106,12 +106,6 @@
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"Assets/ProCore/ProBuilder/Classes/ClassesLib/KdTreeLib.dll"
--r:"Assets/ProCore/ProBuilder/Classes/ClassesLib/pb_Stl.dll"
--r:"Assets/ProCore/ProBuilder/Classes/ClassesLib/Poly2Tri.dll"
--r:"Assets/ProCore/ProBuilder/Classes/ProBuilderCore-Unity5.dll"
--r:"Assets/ProCore/ProBuilder/Classes/ProBuilderMeshOps-Unity5.dll"
--r:"Assets/ProCore/ProBuilder/Editor/ProBuilderEditor-Unity5.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
@@ -308,6 +302,7 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
 -r:"C:/Users/Bryce/Ludum Dare/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+-r:"Library/Bee/artifacts/500b0aE.dag/Unity.Settings.Editor.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEditor.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEngine.TestRunner.ref.dll"

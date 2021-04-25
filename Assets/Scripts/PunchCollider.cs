@@ -20,7 +20,7 @@ public class PunchCollider : MonoBehaviour
     {
         if (other.tag.Equals("Player"))
         {
-            other.GetComponent<CharacterController>().HitHP(5);
+            other.GetComponent<MyCharacterController>().HitHP(5);
         }
     }
 }

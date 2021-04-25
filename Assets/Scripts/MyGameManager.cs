@@ -33,20 +33,22 @@ public class MyGameManager : MonoBehaviour
 
         if (floorProgression < 2)
         {
-            room = GameObject.Instantiate(roomPrefab, previousRoom.transform.position + new Vector3(13.94f, -2.25f, 46.77f), new Quaternion(0, 0, 0, 0));
+            room = GameObject.Instantiate(roomPrefab, previousRoom.transform.position + new Vector3(8.32f, -6.52f, 46.77f), new Quaternion(0, 0, 0, 0));
         }
         else
         {
             room = GameObject.Instantiate(roomPrefab, previousRoom.transform.position + new Vector3(0f, -10.39f, 79.79f), new Quaternion(0, 0, 0, 0));
 
         }
+       
+
         floorProgression++;
         floorcounter.text = "Floor: "+floorProgression;
         Debug.Log("Spawned floor: "+floorProgression);
     }
     public void SpawnEnemy()
     {
-        floorSpawner = room.transform.GetChild(6).GetComponent<FloorSpawner>();
+        floorSpawner = room.transform.GetChild(5).GetComponent<FloorSpawner>();
         floorSpawner.floorNumber = floorProgression;
         floorSpawner.enabled = true;
     }
@@ -82,6 +84,7 @@ public class MyGameManager : MonoBehaviour
     }
     public void MainMenuPress()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }
 
